@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar starts here -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+        <nav id="menu" class="hidden">
+            <ul class="nav-upper flex-space-around">
+                <li class="nav_list"><a href="#" class="nav_link">Home</a>
+                </li>
+                <li class="nav_list"><a href="register.html" class="nav_link">Register</a>
+                </li>
+                <li class="nav_list"><a href="login.html" class="nav_link">Login</a>
+                </li>
+                <li class="nav_list"><a href="index.html" class="nav_link">Logout</a>
+                </li>
+                <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a>
+                </li>
+                <li class="nav_list"><a href="profile.html" class="nav_link">
+                    <img class="profile-icon" src="images/profile.jpg" alt="Profile img">
+                </a>
+                </li>
+            </ul>
+            <ul class="nav-lower flex-space-around">
+                <li class="nav_list"><a href="/index.html" class="nav_brand nav_link">ABS Express</a></li>
+                <li class="nav_list"><a href="/index.html" class="nav_link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    Cart 2 products- $152.80
+                </a></li>
+            </ul>
+        </nav>
+    <!-- navbar ends here -->
+
+    <!-- main starts here -->
+
+    <main>
+        <section class="register">
+            <h2 class="section-title text-center">User Registration</h2>
+            <div class="card flex-space-around">
+                <div class="form-sec">
+                    <form class="form">
+                        <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required autocomplete="name" />
+                        </div>
+                        <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email" />
+                        </div>
+                        
+                        <div class="form-control flex-center">
+                        <label for="about">Massege</label>
+                        <textarea name="about" id="about"></textarea>
+                        </div>
+                        <div class="form-control flex-center form-btn-field">
+                        <button type="submit" class="btn contact-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="map-sec flex-center">
+                    <address flex-center>
+                        <h4>Address:</h4>
+                        <p>Paniskatu 2D 99</p>
+                        <p>444700, Tampere, Finland.</p>
+                        <br />
+          
+                        <span>Call: </span>
+                        <a href="tel:+3584044444449849">+3584044444449849</a>
+                      </address>
+          
+                      <iframe
+                        class="contact__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972738.4967432638!2d20.692436966362738!3d61.56365872378927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46890adee8df0869%3A0x67162088e58d76af!2sPori!5e0!3m2!1sen!2sfi!4v1676228116317!5m2!1sen!2sfi"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                </div>
+            </div>
+        </section>
+        </main>
+
+    <!-- main ends here -->
+
+    <!-- footer starts here -->
+
+        <footer class="flex-space-around">
+
+            <div class="flex-space-around">
+                <label for="subscribe">Subscribe to ABS Express:
+
+                </label>
+                <input type="email" name="subscribe" id="subscribe" class="footer_input" placeholder="Your Email Address">
+                <button 
+                class="btn btn-subscribe" >Subscribe</button>
+            </div>
+            <p>&copy; Copyright 2023 ABS Express</p>
+
+        </footer>
+
+    <!-- footer ends here -->
+    <script src="index.js"></script>
+</body>
+</html>
